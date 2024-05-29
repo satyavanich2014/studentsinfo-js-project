@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student detailes
+
+    </title>
+</head>
+<body>
+<button onclick="getstudentdetails()">students info</button>
+
+ <script>
+function getstudentdetails(){
+  
+  const studentsDetails = [
+  {
+    "id": 1,
+    "name": "Leanne Graham",
+    "username": "Bret",
+    "email": "Sincere@april.biz",
+  }
+  ,
+  {
+    "id": 2,
+    "name": "Ervin Howell",
+    "username": "Antonette",
+    "email": "Shanna@melissa.tv",
+   
+  },
+  {
+    "id": 3,
+    "name": "Clementine Bauch",
+    "username": "Samantha",
+    "email": "Nathan@yesenia.net",
+  
+  },
+  {
+    "id": 4,
+    "name": "Patricia Lebsack",
+    "username": "Karianne",
+    "email": "Julianne.OConner@kory.org",
+    
+  },
+  {
+    "id": 5,
+    "name": "Chelsey Dietrich",
+    "username": "Kamren",
+    "email": "Lucio_Hettinger@annie.ca",
+   
+  },
+  {
+    "id": 6,
+    "name": "Mrs. Dennis Schulist",
+    "username": "Leopoldo_Corkery",
+    "email": "Karley_Dach@jasper.info",
+    
+  },
+  {
+    "id": 7,
+    "name": "Kurtis Weissnat",
+    "username": "Elwyn.Skiles",
+    "email": "Telly.Hoeger@billy.biz",
+   
+   
+  },
+  {
+    "id": 8,
+    "name": "Nicholas Runolfsdottir V",
+    "username": "Maxime_Nienow",
+    "email": "Sherwood@rosamond.me",
+    
+   
+   
+  },
+  {
+    "id": 9,
+    "name": "Glenna Reichert",
+    "username": "Delphine",
+    "email": "Chaim_McDermott@dana.io",
+    
+   
+  },
+  {
+    "id": 10,
+    "name": "Clementina DuBuque",
+   
+    "email": "Rey.Padberg@karina.biz",
+    
+   
+    }
+  
+]
+
+console.log(studentsDetails);
+
+var table = document.createElement('table');
+document.body.appendChild(table);
+table.style.border="1px solid gray";
+table.style.margin="auto";
+table.style.background="red";
+table.style.color="white";
+
+var thead = document.createElement('thead');
+table.appendChild(thead);
+ var headtr = document.createElement('tr')
+ thead.appendChild(headtr);
+ thead.style.color="white";
+ thead.style.background="gray";
+
+
+ var headth1=document.createElement('th');
+ headtr.appendChild(headth1);
+ headth1.innerHTML="Name";
+headth1.style.border="1px solid gray";
+headth1.style.margin="auto";
+headth1.style.width="300px";
+headth1.style.height="30px";
+
+var headth2=document.createElement('th');
+ headtr.appendChild(headth2);
+ headth2.innerHTML="Email";
+headth2.style.border="1px solid gray";
+headth2.style.margin="auto";
+headth2.style.width="300px";
+headth2.style.height="30px";
+
+for(let i =0;i<10;i++){
+
+var tbody = document.createElement('tbody');
+table.appendChild(tbody);
+
+var bodytr = document.createElement('tr');
+tbody.appendChild(bodytr);
+
+var bodytd1 = document.createElement('td');
+bodytr.appendChild(bodytd1);
+bodytd1.textContent = studentsDetails[i].name;
+bodytd1.style.border="1px solid gray";
+bodytd1.style.margin="auto";
+bodytd1.style.width="300px";
+bodytd1.style.height="30px";
+
+
+var bodytd2 = document.createElement('td');
+bodytr.appendChild(bodytd2);
+bodytd2.textContent = studentsDetails[i].email;
+bodytd2.style.border="1px solid gray";
+bodytd2.style.margin="auto";
+bodytd2.style.width="200px";
+
+}}
+
+
+
+ </script>
+  
+</body>
+
+</html>
